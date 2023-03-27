@@ -26,9 +26,7 @@ body {
   border-radius: 10px;
 }
 
-form input,
-form label,
-form button {
+form input, form label, form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -59,8 +57,11 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
-.divTexts {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.paragrafo-resultado, .bad {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(255, 150, 150);
 }
