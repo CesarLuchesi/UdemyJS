@@ -15,5 +15,4 @@ for ( const pessoa of pessoas){
     const {id} = pessoa
     novasPessoas.set(id, {...pessoa})
 }
-
 console.log(novasPessoas)
