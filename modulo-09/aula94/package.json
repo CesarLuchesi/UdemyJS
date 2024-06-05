@@ -1,9 +1,9 @@
 {
-  "name": "aula93",
+  "name": "aula94",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "runweb": "webpack -w"
+    "dev": "webpack -w"
   },
   "keywords": [],
   "author": "",
