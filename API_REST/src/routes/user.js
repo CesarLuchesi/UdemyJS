@@ -4,10 +4,10 @@ import loginRequerid from "../middlewares/loginRequired";
 
 const router = new Router();
 
-router.get("/", userController.index);
-router.get("/:id", userController.show);
+// router.get("/", userController.index);
+// router.get("/:id", userController.show);
 
-router.post("/", userController.store);
+router.post("/", loginRequerid, userController.store);
 router.put("/", loginRequerid, userController.update);
 router.delete("/", loginRequerid, userController.delete);
 

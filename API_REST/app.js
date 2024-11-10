@@ -1,7 +1,11 @@
 import dotenv from "dotenv";
+import {resolve} from 'path'
+
 dotenv.config();
+
 import "./src//models/database";
 import express from "express";
+
 import home from "./src/routes/home";
 import user from "./src/routes/user";
 import tokens from "./src/routes/token";
@@ -18,6 +22,7 @@ class App {
   middlewares() {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
+    this.app.use(express.static(resolve(__dirname, 'uploads')));
   }
 
   routes() {
